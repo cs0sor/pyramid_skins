@@ -1,0 +1,5 @@
+<html metal:use-macro="skin: main_template">
+  <body metal:fill-slot="body">
+    ${context}
+  </body>
+</html>

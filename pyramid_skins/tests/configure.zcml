@@ -1,0 +1,4 @@
+<configure xmlns="http://pylonshq.com/pyramid">
+    <include package="pyramid_skins" />
+    <skins path="skins" />
+</configure>

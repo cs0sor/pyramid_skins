@@ -1,0 +1,5 @@
+*.pyc
+*.pyo
+*.svn
+*.svn-base
+.DS_Store

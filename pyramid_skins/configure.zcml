@@ -1,0 +1,29 @@
+<configure xmlns="http://pylonshq.com/pyramid">
+
+  <include package="pyramid.includes" />
+  <include package="chameleon.zpt" />
+  <include file="meta.zcml" />
+
+  <adapter
+     provides="pyramid.interfaces.ITraverser"
+     factory=".routes.RoutesTraverser"
+     for=".routes.RoutesTraverserFactory"
+     />
+
+  <utility
+     name=".pt"
+     provides=".interfaces.ISkinObjectFactory"
+     component=".models.SkinTemplate"
+     />
+
+  <utility
+     name="skin"
+     factory=".zpt.SkinTranslator"
+     />
+
+  <utility
+     name="route"
+     factory=".zpt.RouteTranslator"
+     />
+
+</configure>

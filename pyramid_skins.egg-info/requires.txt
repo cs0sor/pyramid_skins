@@ -1,0 +1,9 @@
+setuptools
+pyramid
+
+[tests]
+setuptools
+pyramid
+manuel
+pyramid
+MacFSEvents
